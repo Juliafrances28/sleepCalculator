@@ -50,3 +50,16 @@ switch (day) {
   default:
     return "no sleep";
 }
+
+// This function is the figure out the total number of sleep hours you got in the past week.
+const getActualSleepHours = () =>
+  getSleepHours("Monday") +
+  getSleepHours("Tuesday") +
+  getSleepHours("Wednesday") +
+  getSleepHours("Thursday") +
+  getSleepHours("Friday") +
+  getSleepHours("Saturday") +
+  getSleepHours("Sunday");
+
+console.log(getSleepHours("Monday"));
+console.log(getActualSleepHours());
