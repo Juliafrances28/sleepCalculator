@@ -63,3 +63,10 @@ const getActualSleepHours = () =>
 
 console.log(getSleepHours("Monday"));
 console.log(getActualSleepHours());
+
+const getIdealSleepHours = () => {
+  const idealHours = 8;
+  return idealHours * 7;
+};
+
+console.log(getIdealSleepHours());
